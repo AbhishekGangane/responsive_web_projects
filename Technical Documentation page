@@ -1,0 +1,421 @@
+# responsive_web_projects
+Responsive web development projects from freecodecamp
+<!-- HTMLCode -->
+
+ <nav id="navbar">
+  <header>C++ Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction To C++">Introduction</a></li>
+    <li>
+       <li><a class="nav-link" href="#Benefits of C++ over C ">Benefits of C++ over C </a></li>
+    <li>
+      <a class="nav-link" href="#OOPs Basic Concepts"
+        >OOPs Basic Concepts</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#Basic Syntax and Structure"> Basic Syntax and Structure</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Data types and Modifiers"> Data types and Modifiers</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Variables in C++"> Variables in C++</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Operators in C++"> Operators in C++</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#sizeof and typedef in C++"> sizeof and typedef in C++</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Decision Making">Decision Making</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Loop types"> Loop types</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Storage Classes"> Storage Classes</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Functions"> Functions</a> 
+    </li>
+     <h3>
+      <a class="nav-link" href="#OOPS Concepts"> OOPS Concepts</a> 
+    </h3>
+     <li>
+      <a class="nav-link" href="#Classes and Objects"> Classes and Objects</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Access Controls in Classes"> Access Controls in Classes</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Defining Class and Object"> Defining Class and Object</a> 
+    </li>
+     <li>
+      <a class="nav-link" href="#Accessing Data Members">Accessing Data Members </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Member Functions in Class">Member Functions in Class </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Types of Member Functions">Types of Member Functions </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Inline Functions"> Inline Functions</a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Function Overloading">Function Overloading </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Constructor and Destructor"> Constructor and Destructor</a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Initializer List"> Initializer List </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Namespace">Namespace </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Static Keyword">Static Keyword </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Const Keyword">Const Keyword </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Refrences">Refrences </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Copy Constructor">Copy Constructor </a> 
+    </li>
+    <li>
+      <a class="nav-link" href="#Pointer to Members"> Pointer to Members</a> 
+    </li>
+    <h3>
+      <a class="nav-link" href="#Advanced Concepts">Advanced Concepts </a> 
+    </h3><li>
+    <a class="nav-link" href="#coming soon">Coming soon...</a></li>
+     </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        C++, as we all know is an extension to C language and was developed by Bjarne stroustrup at bell labs. C++ is an intermediate level language, as it comprises a confirmation of both high level and low level language features. C++ is a statically typed, free form, multiparadigm, compiled general-purpose language.
+
+C++ is an Object Oriented Programming language but is not purely Object Oriented. Its features like Friend and Virtual, violate some of the very important OOPS features, rendering this language unworthy of being called completely Object Oriented. Its a middle level language.
+      </p>   
+    </article> 
+      </section>
+  <section class="main-section" id="Benefits of C++ over C">
+            
+           <header>Benefits of C++ over C</header>
+    <article>
+      <p>
+The major difference being OOPS concept, C++ is an object oriented language whereas C is a procedural language. Apart form this there are many other features of C++ which gives this language an upper hand on C laguage.
+
+Following features of C++ makes it a stronger language than C,
+        <ol>
+          <li>There is Stronger Type Checking in C++.</li>
+          <li>All the OOPS features in C++ like Abstraction, Encapsulation, Inheritance etc makes it more worthy and useful for programmers.</li>
+          <li>C++ supports and allows user defined operators (i.e Operator Overloading) and function overloading is also supported in it.</li>
+        <li>Exception Handling is there in C++.</li>
+          <li>The Concept of Virtual functions and also Constructors and Destructors for Objects.</li>
+          <li>Inline Functions in C++ instead of Macros in C language. Inline functions make complete function body act like Macro, safely</li>
+          <li>Variables can be declared anywhere in the program in C++, but must be declared before they are used.</li>
+        </ol>
+      </p>
+    </article>
+        <section class="main-section" id="OOPs Basic Concept">
+    <header>OOPs Basic Concept</header>
+    <article>
+      <p>
+Object Oriented programming is a programming style that is associated with the concept of Class, Objects and various other concepts revolving around these two, like Inheritance, Polymorphism, Abstraction, Encapsulation etc.
+<br>
+        Let us try to understand a little about all these, through a simple example. Human Beings are living forms, broadly categorized into two types, Male and Female. Right? Its true. Every Human being(Male or Female) has two legs, two hands, two eyes, one nose, one heart etc. There are body parts that are common for Male and Female, but then there are some specific body parts, present in a Male which are not present in a Female, and some body parts present in Female but not in Males.
+<br>
+All Human Beings walk, eat, see, talk, hear etc. Now again, both Male and Female, performs some common functions, but there are some specifics to both, which is not valid for the other. For example : A Female can give birth, while a Male cannot, so this is only for the Female.
+<br>
+Human Anatomy is interesting, isn't it? But let's see how all this is related to C++ and OOPS. Here we will try to explain all the OOPS concepts through this example and later we will have the technical definitons for all this.
+        
+<br>
+
+      <h2><b>Class</b> </h2>
+Here we can take Human Being as a class. A class is a blueprint for any functional entity which defines its properties and its functions. Like Human Being, having body parts, and performing various actions.
+
+      <h2>Inheritance</h2>
+Considering HumanBeing a class, which has properties like hands, legs, eyes etc, and functions like walk, talk, eat, see etc. Male and Female are also classes, but most of the properties and functions are included in HumanBeing, hence they can inherit everything from class HumanBeing using the concept of Inheritance.
+
+      <h2>Objects</h2>
+My name is Abhishek, and I am an instance/object of class Male. When we say, Human Being, Male or Female, we just mean a kind, you, your friend, me we are the forms of these classes. We have a physical existence while a class is just a logical definition. We are the objects.
+
+      <h2>Abstraction</h2>
+Abstraction means, showcasing only the required things to the outside world while hiding the details. Continuing our example, Human Being's can talk, walk, hear, eat, but the details are hidden from the outside world. We can take our skin as the Abstraction factor in our case, hiding the inside mechanism.
+
+   <h2>   Encapsulation</h2>
+This concept is a little tricky to explain with our example. Our Legs are binded to help us walk. Our hands, help us hold things. This binding of the properties to functions is called Encapsulation.
+
+    <h2>  Polymorphism</h2>
+Polymorphism is a concept, which allows us to redefine the way something works, by either changing how it is done or by changing the parts using which it is done. Both the ways have different terms for them.
+
+If we walk using our hands, and not legs, here we will change the parts used to perform something. Hence this is called Overloading.
+
+And if there is a defined way of walking, but I wish to walk differently, but using my legs, like everyone else. Then I can walk like I want, this will be called as Overriding.
+
+OOPS Concept Definitions
+Now, let us discuss some of the main features of Object Oriented Programming which you will be using in C++(technically).
+<ol> 
+  <li> Objects </li>
+<li>Classes </li>
+<li>Abstraction </li>
+<li>Encapsulation </li>
+ <li> Inheritance</li>
+  <li>Overloading </li>
+<li>  Exception Handling</li>
+<hr>
+  <h2>Objects</h2>
+Objects are the basic unit of OOP. They are instances of class, which have data members and uses various member functions to perform tasks.
+<hr>
+<h2>Class </h2>
+It is similar to structures in C language. Class can also be defined as user defined data type but it also contains functions in it. So, class is basically a blueprint for object. It declare & defines what data variables the object will have and what operations can be performed on the class's object.
+<hr>
+  <h2>Abstraction</h2>
+Abstraction refers to showing only the essential features of the application and hiding the details. In C++, classes can provide methods to the outside world to access & use the data variables, keeping the variables hidden from direct access, or classes can even declare everything accessible to everyone, or maybe just to the classes inheriting it. This can be done using access specifiers.
+<hr>
+  <h2>Encapsulation</h2>
+It can also be said data binding. Encapsulation is all about binding the data variables and functions together in class.
+<hr>
+<h2>Inheritance</h2>
+Inheritance is a way to reuse once written code again and again. The class which is inherited is called the Base class & the class which inherits is called the Derived class. They are also called parent and child class.
+
+So when, a derived class inherits a base class, the derived class can use all the functions which are defined in base class, hence making code reusable.
+<hr>
+  <h2>Polymorphism</h2>
+It is a feature, which lets us create functions with same name but different arguments, which will perform different actions. That means, functions with same name, but functioning in different ways. Or, it also allows us to redefine a function to provide it with a completely new definition. You will learn how to do this in details soon in coming lessons.
+<hr>
+  <h2>Exception Handling</h2>
+Exception handling is a feature of OOP, to handle unresolved exceptions or errors produced at runtime.
+      </p></article></section>
+    <section class="main-section" id="Basic Syntax and Structure">
+      <header>Basic Syntax and Structure</header>
+      <article>
+<p> In this section we will cover the basics of C++, it will include the syntax, Variables, operators, loop types, pointers, references and information about other requirements of a C++ program. You will come across lot of terms that you have already studied in C.
+
+      <header>First C++ program</header>
+          
+  Here we will discuss one simple and basic C++ program to print "Hello this is C++" and its structure in parts with details and uses.
+        <code>
+#include <iostream.h>
+using namespace std;
+int main()
+{
+    cout << "Hello this is C++";
+}
+          </code>
+          <strong>Header files</strong> are included at the beginning just like in C program. Here iostream is a header file which provides us with input & output streams. Header files contained predeclared function libraries, which can be used by users for their ease.
+
+Using namespace std, tells the compiler to use standard namespace. Namespace collects identifiers used for class, object and variables. NameSpace can be used by two ways in a program, either by the use of using statement at the beginning, like we did in above mentioned program or by using name of namespace as prefix before the identifier with scope resolution (::) operator.
+<code>
+Example: std::cout << "A";
+          </code>
+<strong> main()</strong> , is the function which holds the executing part of program its return type is int.
+<br>
+     <strong>     cout << </strong>, is used to print anything on screen, same as  printf in C language.<strong>  cin</strong>  and <strong> cout </strong> are same as scanf and printf, only difference is that you do not need to mention format specifiers like, %d for int etc, in cout & cin. <hr>
+          <header> Comments in C++ Program </header>
+For single line comments, use // before mentioning comment, like
+<code>
+  cout<<"single line";   // This is single line comment </code>
+For multiple line comment, enclose the comment between /* and */
+          <code>
+/*this is a multiple line comment */ </code> <hr>
+          <header>    Creating Classes in C++ </header>
+Classes name must start with capital letter, and they contain data Variables and member functions. This is a mere introduction to classes, we will discuss classes in detail throughout the C++ tutorial.
+<code>
+class Abc
+{
+    int i;           //data variable
+    void display()         //Member Function
+    { 
+        cout << "Inside Member Function";
+    }
+}; // Class ends here
+
+int main()
+{
+    Abc obj;  // Creatig Abc class's object
+    obj.display();  //Calling member function using class object
+  } </code>
+This is how a class is defined, once a class is defined, then its object is created and the member functions are used.
+<br>
+Variables can be declared anywhere in the entire program, but must be declared, before they are used. Hence, we don't need to declare variable at the start of the program.
+        </p></article></section> <hr>
+  <section class="main-section" id="Data types and modifier"> 
+    
+      <header>  Datatypes and Modifiers in C++ </header>
+    <article>
+      <p>
+Let's start with Datatypes. They are used to define type of variables and contents used. Data types define the way you use storage in the programs you write. Data types can be of two types:
+<ol> <li> Built-in Datatypes </li>
+  <li> User-defined or Abstract Datatypes </li>
+      </ol> <hr>
+      <br>
+  <header>    Built-in Data Types </header>
+These are the datatypes which are predefined and are wired directly into the compiler. For eg: <strong>int, char etc.</strong> <hr>
+<br>
+<header>User defined or Abstract data types </header>
+These are the type, that user creates as a class or a structure. In C++ these are classes where as in C language user-defined datatypes were implemented as structures.
+<hr> <br>
+    <header>  Basic Built in Datatypes in C++ </header> <br>
+      <table border="1.5px"  >
+        <tbody><tr><td>char</td><td>for character storage (1 byte)</td></tr>
+<tr><td>int</td><td>for integral number (2 bytes)</td></tr>
+<tr><td>float</td><td>single precision floating point (4 bytes)</td></tr>
+<tr><td>double</td><td>double precision floating point numbers (8 bytes)</td></tr>
+</tbody>
+      </table><br>
+      <strong> Example: </strong>
+<code>
+char a = 'A';          // character type
+int a = 1;             // integer type
+float a = 3.14159;     // floating point type 
+double a = 6e-4;       // double type (e is for exponential)
+      </code>
+      <hr>
+  <header>    Other Built in Datatypes in C++</header> <br>
+      <table border="2px">
+        <tbody>
+          <tr><td>bool</td> <td>Boolean (True or False)</td></tr>
+          <tr><td>void</td><td>	Without any Value</td></tr> <tr><td>wchar_t	</td><td>Wide Character</td></tr>
+        </tbody>
+      </table> <br> <hr>
+ <header>     Enum as Datatype in C++ </header>
+Enumerated type declares a new type-name along with a sequence of values containing identifiers which has values starting from 0 and incrementing by 1 every time.
+
+<strong>For Example: </strong>
+<br>
+ <code>  enum day(mon, tues, wed, thurs, fri) d; </code> 
+Here an enumeration of days is defined which is represented by the variable d. mon will hold value 0, tue will have 1 and so on.<br> We can also explicitly assign values, like, enum day(mon, tue=7, wed);. Here, mon will be 0, tue will be assigned 7, so wed will get value 8. <hr>
+ <header>     Modifiers in C++ </header>
+In C++, special words(called modifiers) can be used to modify the meaning of the predefined built-in data types and expand them to a much larger set. There are four datatype modifiers in C++, they are:
+<ol>
+  <li>long</li>
+<li>short</li>
+  <li>signed</li>
+  <li>unsigned</li> </ol>
+The above mentioned modifiers can be used along with built in datatypes to make them more precise and even expand their range.
+
+Below mentioned are some important points you must know about the modifiers,
+<ul>
+  <li>long and short modify the maximum and minimum values that a data type will hold.</li>
+<li>A plain int must have a minimum size of short.
+  Size hierarchy : short int < int < long int </li>
+  <li>Size hierarchy for floating point numbers is : 
+    float < double < long double </li>
+<li>  long float is not a legal type and there are no short floating point numbers. </li>
+<li> Signed types includes both positive and negative numbers and is the default type.</li>
+<li> Unsigned, numbers are always without any sign, that is always positive.</li>
+      </ul>
+      </p>
+    </article>
+    </section> <hr>
+ <section class="main-section" id="Variable in C++">
+<header>Variables in C++</header>
+   <article> <p>
+Variable are used in C++, where we need storage for any value, which will change in program. Variable can be declared in multiple ways each with different memory requirements and functioning. Variable is the name of memory location allocated by the compiler depending upon the datatype of the variable.
+
+variables in C++
+
+Basic types of Variables
+Each variable while declaration must be given a datatype, on which the memory assigned to the variable depends. Following are the basic types of variables,
+     <table border="1.5px">
+       <tbody>
+         <tr>
+           <td>bool	</td> <td>For variable to store boolean values( True or False )</td>
+         </tr>
+         <tr>
+           <td>char</td><td>For variables to store character types.</td>
+         </tr>
+         <tr>
+           <td>int	</td> <td>for variable with integral values </td>
+         </tr>
+         <tr>
+          <td colspan="2">float and double are also types for variables with large and floating point values</td>
+         </tr>
+       </tbody>
+     </table> <hr>
+     <header>  Declaration and Initialization</header>
+Variable must be declared before they are used. Usually it is preferred to declare them at the starting of the program, but in C++ they can be declared in the middle of program too, but must be done before using them.
+
+     <strong>For example:</stong>
+<code>
+int i;      // declared but not initialised
+char c; 
+  int i, j, k;  // Multiple declaration</code>
+Initialization means assigning value to an already declared variable,
+<code>
+int i;   // declaration
+i = 10;  // initialization</code>
+Initialization and declaration can be done in one single step also,
+<code>
+int i=10;         //initialization and declaration in same step
+int i=10, j=11;</code>
+If a variable is declared and not initialized by default it will hold a garbage value. Also, if a variable is once declared and if try to declare it again, we will get a compile time error.
+<code>
+int i,j;
+i=10;
+j=20;
+int j=i+j;   //compile time error, cannot redeclare a variable in same scope</code><hr>
+     <header>Scope of Variables</header>
+All the variables have their area of functioning, and out of that boundary they don't hold their value, this boundary is called scope of the variable. For most of the cases its between the curly braces,in which variable is declared that a variable exists, not outside it. We will study the storage classes later, but as of now, we can broadly divide variables into two main types,
+     <ul><li>Global Variables</li>
+       <li>Local variables</li></ul> <hr>
+     <header>Global variables</header>
+Global variables are those, which ar once declared and can be used throughout the lifetime of the program by any class or any function. They must be declared outside the main() function. If only declared, they can be assigned different values at different time in program lifetime. But even if they are declared and initialized at the same time outside the main() function, then also they can be assigned any value at any point in the program.
+
+     <strong>For example:</stong> Only declared, not initialized
+<code>
+include <iostream>
+using namespace std;
+int x;                // Global variable declared
+int main()
+{
+    x=10;                 // Initialized once
+    cout <<"first value of x = "<< x;
+    x=20;                 // Initialized again
+    cout <<"Initialized again with value = "<< x;
+     }</code>
+  <hr>
+  <header>Local Variables</header>
+Local variables are the variables which exist only between the curly braces, in which its declared. Outside that they are unavailable and leads to compile time error.
+
+     <strong>Example :</strong>
+<code>
+include <iostream>
+using namespace std;
+int main()
+{
+    int i=10;
+    if(i<20)        // if condition scope starts
+    {
+        int n=100;   // Local variable declared and initialized
+    }              // if condition scope ends
+    cout << n;      // Compile time error, n not available here
+             } </code> <hr>
+  <header>Some special types of variable</header>
+  
+There are also some special keywords, to impart unique characteristics to the variables in the program. Following two are mostly used, we will discuss them in details later.
+<br>
+Final - Once initialized, its value cant be changed.
+Static - These variables holds their value between function calls.
+             <strong>Example :</strong>
+<code>
+#include <iostream.h>
+using namespace std;
+int main()
+{
+    final int i=10;
+    static int y=20;
+}
+     </code>
+     </p> </article> </section>
+</main>
